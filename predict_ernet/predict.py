@@ -158,9 +158,9 @@ model.load_weights('average_new.h5')
 
 total_time = 0
 for k in range(1, 2):
-    # print(k)
-    theline = linecache.getline('testspacetargets.txt', k)  # 读取第一行
-    name = theline.split()  # 去空格
+    
+    theline = linecache.getline('testspacetargets.txt', k)
+    name = theline.split()  
 
     img = cv2.imread(
         'testspacetargets' + '/'+name[0], 0)
